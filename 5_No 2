@@ -19,3 +19,5 @@ match x:
     tinggi = int(input("Masukan tinggi"))
     rumus = 0.5*alas*tinggi
     print("luas segitiga ", rumus)
+ case _ :
+    print("Pilihan anda tidak ada. pilih 1-3 saja")
