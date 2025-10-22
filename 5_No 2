@@ -1,0 +1,21 @@
+#Tugas 2
+x = int(input("""masukan nomor 
+No 1 
+No 2
+No 3
+"""))
+
+match x:
+ case 1:
+  sisi = int(input("masukan nilai sisi"))
+  rumus = sisi * sisi
+  print ("luas persegi adalah ",rumus )
+ case 2:
+    jari = int(input("Masukan Jari-jari"))
+    rumus = 3.14*jari**2
+    print("luas lingkaran ", rumus)
+ case 3:
+    alas = int(input("Masukan alas"))
+    tinggi = int(input("Masukan tinggi"))
+    rumus = 0.5*alas*tinggi
+    print("luas segitiga ", rumus)
