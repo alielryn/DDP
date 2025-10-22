@@ -1,0 +1,22 @@
+#Tugas No 1
+NamaKendaraan = "Beat"
+JenisKendaraan = "Motor"
+ccKendaraan = 150
+WarnaKendaraan = "Hijau"
+RodaKendaraan = 2
+
+data_kendaraan = [
+    NamaKendaraan, JenisKendaraan, ccKendaraan, WarnaKendaraan, RodaKendaraan
+]
+
+HargaKendaraan = 8000000
+TipeKendaraan = "Matic"
+print(data_kendaraan)
+
+data_kendaraan.append(HargaKendaraan)
+data_kendaraan.append(TipeKendaraan)
+print(data_kendaraan)
+
+MerkKendaraan = "Honda"
+data_kendaraan.insert(2, MerkKendaraan)
+print(data_kendaraan)
