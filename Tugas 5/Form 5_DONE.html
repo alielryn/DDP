@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --gap: 1rem;
+    }
+
+    body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        margin: 0px;
+        background: #4747ad;
+        color: #222;
+        place-items: center;
+
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0.75rem 1rem;
+    }
+
+    section {
+        background-color: rgba(255, 255, 255, 0.884);
+        border: 1px solid #e6e6e9;
+        border-radius: .75rem;
+        padding: 1rem 3rem;
+        margin: 0.75rem 0;
+
+    }
+
+    button {
+        border: 1px solid #737e88;
+        background: #09121a;
+        color: white;
+        padding: 1rem 6rem;
+        border-radius: .5rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    label {
+        font-weight: 600;
+    }
+
+    .sampingan {
+        
+        /* display: flex;
+        gap: var(--gap);
+        align-items:flex-end;
+        */
+        display: flex;
+        gap: var(--gap);
+        align-items: flex-start;
+
+    }
+
+    .note {
+        opacity: 0.5;
+    }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .check {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .interest {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    input[type="time"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="color"],
+    input[type="file"],
+    select,
+    textarea,
+    input[type="range"] {
+        width: 100%;
+        max-width: 1000px;
+        padding: 1rem 2rem;
+        border: 1px solid #cfd3d8;
+        border-radius: .5rem;
+        background: #fff;
+        box-sizing: border-box;
+    }
+</style>
+
+<body style="background-color: rgb(30, 59, 25);">
+    <main>
+        <section>
+            <h1 style="margin-bottom: 0.5rem;">Order Form</h1>
+            <!--Nama-->
+            <div >
+                <label>Name</label>
+                <input type="text" placeholder="Fullj Name" required>
+            </div>
+            <!--Kontak-->
+            <div class="sampingan">
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="example@gmail.com" required>
+                </div>
+                <div>
+                    <label>Phone</label>
+                    <input type="tel" placeholder="(+62)xxx-xxxx-xxxx" required>
+                </div>
+            </div>
+            <!--Orderan-->
+            <h2>Order Details</h2>
+            <div class="sampingan">
+                <div class="">
+                    <label>Product</label>
+                    <select>
+                        <option disabled selected>Select a product</option>
+                        <option>Ikan Bakar</option>
+                        <option>Ayam Bakar</option>
+                        <option>Ikan setengah matang</option>
+                        <option>Ayam kukus</option>
+                        <option>Bawang bakar</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Quantity</label>
+                    <input type="number" placeholder="1">
+                </div>
+            </div><br>
+            <!--Size-->
+            <div>
+                <label>Size</label>
+                <div class="check">
+                    <div><input type="checkbox">Small</div>
+                    <div><input type="checkbox">Medium</div>
+                    <div><input type="checkbox">Large</div>
+                    <div><input type="checkbox">Extra Large</div>
+                </div>
+
+            </div><br>
+            <!--Size-->
+            <div>
+                <label>Color</label>
+                <div class="check">
+                    <div><input type="checkbox">Red</div>
+                    <div><input type="checkbox">Blue</div>
+                    <div><input type="checkbox">Green</div>
+                    <div><input type="checkbox">Black</div>
+                </div>
+
+            </div><br>
+            <!--Add comments-->
+            <label>Additional Comments</label>
+            <textarea placeholder="Enter any additional comments or instructions"></textarea>
+            <!--Paynent-->
+            <h2>Payment Details</h2>
+            <div>
+                <label>Payment Method</label>
+                <select>
+                    <option disabled selected>Select a payment method</option>
+                    <option>Cash On Delivery</option>
+                    <option>ShoopePay</option>
+                    <option>GoPay</option>
+                    <option>OVO</option>
+                    <option>Dana</option>
+                </select>
+            </div>
+            <br>
+            <!--Persetujuan-->
+            <div>
+                <input type="checkbox" required>I accepted the terms and condition
+            </div>
+            <!--Register Now-->
+            <div style="position: center; ">
+                <button>Submit Order</button>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

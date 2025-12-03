@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #9fa9be;
+    color:rgb(17, 20, 49);
+    line-height: 1.5
+}
+
+.site-header {
+    background-color: rgba(35, 35, 54, 0.345);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid rgb(68, 66, 163);
+}
+
+.site-header h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.site-header p {
+    font-size: 0.9rem;
+    color: rgb(0, 0, 255);
+}
+
+.top-nav {
+    background-color: rgba(114, 136, 150, 0.772);
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 1rem ;
+    border-bottom: 2px solid rgb(68, 66, 163);
+}
+
+.top-nav a {
+    color: ;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+}
+    

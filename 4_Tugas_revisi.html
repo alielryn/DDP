@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 PemWeb Ahmad Fathi</title>
+  <style>
+    body{
+        font-family: 'segoe UI', Arial, sans-serif;
+        margin: 0; background-color: #fcfeff; color: #222;
+    }
+    /*Ini Settingan buat HEADER*/
+    header {
+        background-color: #355485;
+        color: white; text-align: center;
+        padding: 20px 0;
+    }
+    header h1 {
+        margin: 0; font-size: 28px;
+    }
+    /*Ini settingan buat Navigasi*/
+    nav {
+        background-color: #4f90c6; 
+        text-align: center; padding: 10px 0;
+    }
+    nav a {
+        color: white; text-decoration: none; 
+        margin: 0 15px; font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline
+    }
+    /*LAYOUT*/
+    .container {
+        width: 70%; max-width: 1100px;
+        margin: 20px auto; overflow: auto; margin-left: 20px;
+        ;
+    }
+    section {
+        float: left; width: 65%; background-color: white;
+        border: 1px solid #ddd; border-radius: 8px;
+        padding: 16px; box-sizing: border-box;
+    }
+    aside {
+        float:right; width: 23%; background-color: #cbdde9;
+        border: 1px solid #bbb; border-radius: 8px;
+        padding: 16px; box-sizing: border-box; margin-right: 30px; margin-top: 20px;
+        /*float: right;
+          width: 30%;
+          background: #f1f5f9;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          padding: 15px;*/
+    }
+    h2 {
+        color: #355485; margin-top: 0;
+    }
+    article img {
+        width: 100%; border-radius: 6px; margin-bottom: 10px;
+    }
+    /*Ini buat TABLE DATA*/
+    table {
+        border-collapse: collapse; width: 100%; margin: 12px 0;
+    }
+    th,
+    td {
+        border: 1px solid #ccc; padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f1f5f9;
+    }
+    /*IFRAME*/
+    iframe {
+        width: 100%; height: 250px; border: 1px solid #999; border-radius: 6px;
+    }
+    /*FOOTER*/
+    footer {
+        clear: both; background-color: #355485; color: white; 
+        text-align: center; padding: 14px 0; margin-top: 20px;
+    }
+    footer a {
+        color: #cbdde9; text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    /*gatau ini dari kakaknya "RESPONSIVE SEDIKIT" katanya*/
+    @media (max-widht: 768px) {
+        section,
+        aside {
+            float: none; width: 100%;
+        } 
+    } 
+  </style>
+</head>
+
+<body>
+    <header>
+    <h1>Hololive EN Launch New Generation</h1>
+    <p>Tugas Pemrograman Web Pertemuan 4 - Ahmad Fathi Ahlul Rayan</p>
+    </header>
+    <nav>
+        <a href="#title">Berita Utama</a>
+        <a href="#fakta">Fakta Unik</a>
+        <a href="#iframe">Video dan Foto</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+            <section class="container">
+            <div>  
+                <h2 id="title">Ini Judul dari isi</h2>
+                <img src="https://i.ibb.co.com/PZkBWvk2/Kroniicopter-Helicopter-Sticker-Kroniicopter-Helicopter-Ouro-Kronii-Discover-Share-GIFs.gif" alt="gif" width="400">
+                  <p>
+                    <b>America, Hololive English, </b> memberikan pengumuman besar pada tanggal 27 Agustus 2023, yaitu peluncuran generasi baru yang disebut "Project: HOPE". 
+                    Hololive Hope adalah generasi keempat dari Hololive English, yang mengikuti jejak generasi sebelumnya seperti Myth, Council, dan Tempus.
+                    Generasi ini terdiri dari lima anggota baru yang akan bergabung dengan Hololive English.
+                  </p>
+                  <p>
+                    Yagoo mengatakan bahwa tujuan dari generasi baru ini adalah untuk membawa harapan dan inspirasi kepada para penggemar di seluruh dunia.
+                </p>
+                <p>
+                    Asli kak, saya dah bingung mau ngetik apa lagi di web ini biar panjang lebar. kan kalo panjang lebar lumayan keren tuh kak, jadi bisa scroll-scroll dikit ke bawah aowokwkokwa.
+                    ya walaupun <i>pointless</i> juga sih. Btw ini gapapa kan kak kalo teks ini malah isinya aneh? Biarin aja ya kak? yang ngecek ini cuma asdos aja kan? 
+                </p>
+                <p>
+                    Oke deh kak. Balik lagi ke isi dari berita. Hololive English, Hololive Project: HOPE. Di anatara membernya yaitu bisa lihat di bawah ini.
+                </p>
+                <p>
+                    Member Hololive Project:Hope merujuk pada satu anggota, yaitu <a href="https://hololive.hololivepro.com/en/talents/irys/" target="_blank">IRys.</a>
+                    Karena <i>"Project: Hope"</i> adalah generasi pertama dari hololive English yang hanya memiliki satu talenta aktif saat debutnya.
+                    Anggota Hololive English lainnya termasuk ke dalam generasi atau unit yang berbeda, seperti <i>"Hololive EN: Promise"</i> yang merupakan unit yang beranggotakan lima talenta.
+                </p>
+
+                </div>
+                <!--Unordered LIST-->
+                <div id="ul">
+                    <p>
+                       <b>Member Hololive Project: Hope</b>
+                       <ul>
+                        <li>IRys</li>
+                       </ul> 
+                    </p>
+                </div>
+                <!--ORDERED LIST-->
+                <div id="ol">
+                    <p>
+                        <b>Member Hololive English: Promise</b>
+                        <ol>
+                            <li>IRys</li>
+                            <li>Ceres Fauna</li>
+                            <li>Ouro Kronii</li>
+                            <li>Nanashi Mumei</li>
+                            <li>Hakos Baelz</li>
+                        </ol>
+                    </p>
+                </div>
+                <!--TABEL-->
+                <div id="tabel">
+                    <p>
+                        <b>Hololive Berdasarkan Bahasa</b>
+                        <table>
+                            <tr>
+                                <th>Hololive JP</th>
+                                <th>Hololive ID</th>
+                                <th>Hololive EN</th>
+                            </tr>
+                            <tr>
+                                <td>38 Member</td>
+                                <td>9 Member</td>
+                                <td>20 Member</td>
+                            </tr>
+                        </table>
+                    </p>
+                </div>
+                <!--MOTTO-->
+                <div id="motto">
+                    <p><b>Motto?</b></p>
+                    <blockquote style="border-left: #355485 solid 5px; background-color: #4884b527;">
+                        <div style="padding:5px;">
+                            Manusia takkan terus hidup jika hanya untuk menemukan.
+                            Manusia akan terus hidup karena mereka terus mencari.
+                        </div>
+                    </blockquote>
+                </div>
+                <!--IFRAME-->
+                  <h2 id="iframe">IFRAME</h2>
+                  <p>
+                    Berikut adalah contoh dari IFRAME
+                  </p>
+                  <iframe src="https://en.wikipedia.org/wiki/Hololive_Production" title="contoh iframe"></iframe>
+            </section>
+        </div>
+
+        <div id="fakta">
+            <aside>
+            <h2>Fakta Unik Tentang Saya</h2>
+                <p>
+                <ul>
+                    <li>Interested by chaotic vtuber</li>
+                    <li>Kronii is my oshi</li>
+                    <li>Low-key authisttic</li>
+                </ul>
+            <b>Kebiasaan Nonton Clip Vtuber</b>
+                <table>
+                    <tr>
+                        <th>Waktu</th>
+                        <th>Kegiatan</th>
+                    </tr>
+                    <tr>
+                        <td>21.00 - 22.00</td>
+                        <td>Scroll IG + Clip HoloEN</td>
+                    </tr>
+                    <tr>
+                        <td>23.00 - 05.00</td>
+                        <td>Turu Mimpiin Vtuber</td>
+                    </tr>
+                </table>
+              </p>
+             </aside>
+        </div>
+    </main>
+    <footer>
+      <p id="kontak"><b>Hubungi saya: </b><a href="mailto: alielryn@gmail.com">alielryn@gmail.com</a></p>
+        <p>&copy;2025 Ahmad Fathi Ahlul Rayan - bayar sini</p>
+</html>

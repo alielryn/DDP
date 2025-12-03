@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> :root {
+     --gap: 1rem;
+    }
+    body {
+     font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+     line-height: 1.5;
+     margin: 0px;
+     background: #4747ad;
+     color: #222;
+     place-items: center;
+     
+     }
+    header,
+    main,
+    footer {
+        max-width: 900px;
+         margin: 0 auto;
+        padding: 0.75rem 1rem;
+    }
+
+    section {
+        background-color: rgba(255, 255, 255, 0.884);
+        border: 1px solid #e6e6e9;
+        border-radius: .75rem;
+        padding: 1rem 3rem;
+        margin: 0.75rem 0;
+        
+    }
+    
+    button {
+        border: 1px solid #1e88e5;
+     background: #2196f3;
+     color: white;
+     padding: 1rem 6rem;
+     border-radius: .5rem;
+     cursor: pointer;
+     margin-top: 1rem;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+    }
+
+    label {
+     font-weight: 600;
+    }
+    .sampingan {
+        display: flex;
+        gap: var(--gap);
+        align-items:flex-end;
+    }
+
+    .note {
+        opacity: 0.5;
+    }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hari {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .interest {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    input[type="text"],
+ input[type="password"],
+ input[type="email"],
+ input[type="number"],
+ input[type="date"],
+ input[type="time"],
+ input[type="url"],
+ input[type="tel"],
+ input[type="search"],
+ input[type="color"],
+ input[type="file"],
+ select,
+ textarea,
+ input[type="range"] {
+     width: 100%;
+     max-width: 1000px;
+     padding: 1rem 2rem;
+     border: 1px solid #cfd3d8;
+     border-radius: .5rem;
+     background: #fff;
+     box-sizing: border-box;
+ }
+</style>
+<body style="background-color: rgb(30, 59, 25);">
+    <main>
+        <section>
+        <h1 style="margin-bottom: 0.5rem;">Volunteer Sign Up Form</h1>
+        <p>Please fill out the following form to become volunteer<p>
+        <!--Nama-->
+        <div class="sampingan">
+            <div>
+                <label>First Name</label>
+                <input type="text" placeholder="Enter your first name" required>
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" placeholder="Enter your last name" required>
+            </div>
+        </div>
+        <!--Email-->
+        <div class="" style="margin-top: 0.7rem;">
+            <label>Email</label>
+            <div>
+                <input type="email" placeholder="Enter your email address" required>
+            </div>
+        </div>
+        <!--Phone-->
+        <div class="" style="margin-top: 0.7rem;">
+            <label>Phone Number</label>
+            <div>
+                <input type="tel" placeholder="Enter your phone number" required>
+            </div>
+        </div>
+        <!--Birth-->
+        <div class="" style="margin-top: 0.7rem;">
+            <label>Date of Birth</label>
+            <div>
+                <input type="text" placeholder="Enter your date of birth" required>
+            </div>
+        </div>
+        <!--Role-->
+                <label>Preferred Volunteer Role</label>
+                <select>
+                    <option disabled selected>Select your Preferred Volunteer Role</option>
+                    <option>Field Volunteer</option>
+                    <option>Administration</option>
+                    <option>Media</option>
+                    <option>Logistic</option>
+                    <option>Medical</option>
+                    <option>Coordinator</option>
+                    <option>Education</option>
+                    <option>Fundraising</option>
+                    <option>Event Management</option>
+                    <option>Environmental Volunteer</option>
+                    <option>Interpreter</option>
+                    <option>Community Engagement</option>
+             </select>
+        </div>
+        <h2 style="margin-bottom: .3rem;">availability</h2>
+        </p>
+        <!--Class Days-->
+        <label for="">Days available</label>
+       <div class="hari"  id="">
+            <div><input type="checkbox">Monday</div>
+            <div><input type="checkbox">Tuesday</div>
+            <div><input type="checkbox">Wednesday</div>
+            <div><input type="checkbox">Thursday</div>
+            <div><input type="checkbox">Friday</div>
+            <div><input type="checkbox">Saturday</div>
+            <div><input type="checkbox">Sunday</div>
+       </div>
+       <br>
+       <!--Start&End-->
+       <div class="sampingan">
+            <div>
+                <label>Available Start Time</label>
+                <input type="time" placeholder>
+            </div>
+            <div>
+                <label>Available End Time</label>
+                <input type="time">
+            </div>
+       </div>
+
+       <h2>Skills and Interest</h2>
+       <!--Skills-->
+       <div>
+            <label>Skills and Experience</label>
+            <textarea placeholder="Enter your skills and experience"></textarea> 
+            <p class="note">Please Describe your skills and experience, if any, it would be relevant to the volunteer role.</p>
+       </div>
+       <br>
+       <!--Interest-->
+       <div>
+            <label>Interest</label>
+            <p class="note">Select your interest</p>
+            <div class="interest"  id="">
+                <div><input type="checkbox">Animals</div>
+                <div><input type="checkbox">Children</div>
+                <div><input type="checkbox">Elderly</div>
+                <div><input type="checkbox">Environment</div>
+                <div><input type="checkbox">Health</div>
+                <div><input type="checkbox">Homelessness</div>
+                <div><input type="checkbox">Poverty</div>
+            <br>
+       </div>
+       </div>
+       <br>
+       <!--Persetujuan-->
+       <div>
+        <input type="checkbox" required>I agree to the terms and condition of this event
+       </div>
+       <!--Register Now-->
+       <div style="position: center; ">
+            <button>Submit</button>
+        </div>
+       
+    </section>        
+    </main>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas PemWeb 4 Ahmad Fathi Ahlul Rayan</title>
+<style>
+    body{
+        font-family: 'segoe UI', Arial, sans-serif;
+        margin: 0; background-color: #fcfeff; color: #222;
+    }
+    /*Ini Settingan buat HEADER*/
+    header {
+        background-color: #355485;
+        color: white; text-align: center;
+        padding: 20px 0;
+    }
+    header h1 {
+        margin: 0; font-size: 28px;
+    }
+    /*Ini settingan buat Navigasi*/
+    nav {
+        background-color: #4f90c6; 
+        text-align: center; padding: 10px 0;
+    }
+    nav a {
+        color: white; text-decoration: none; 
+        margin: 0 15px; font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline
+    }
+    /*LAYOUT*/
+    .container {
+        width: 90%; max-width: 1100px;
+        margin: 20px auto; overflow: auto; margin-left: 20px
+        ;
+    }
+    section {
+        float: left; width: 68%; background-color: white;
+        border: 1px solid #ddd; border-radius: 8px;
+        padding: 16px; box-sizing: border-box;
+    }
+    aside {
+        float: right; width: 28%; background-color: #cbdde9;
+        border: 1px solid #bbb; border-radius: 8px;
+        padding: 16px; box-sizing: border-box; margin-top: 10px;
+        /*float: right;
+          width: 30%;
+          background: #f1f5f9;
+          border: 1px solid #e2e8f0;
+          border-radius: 8px;
+          padding: 15px;*/
+    }
+    h2 {
+        color: #355485; margin-top: 0;
+    }
+    article img {
+        width: 100%; border-radius: 6px; margin-bottom: 10px;
+    }
+    /*Ini buat TABLE DATA*/
+    table {
+        border-collapse: collapse; width: 100%; margin: 12px 0;
+    }
+    th,
+    td {
+        border: 1px solid #ccc; padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f1f5f9;
+    }
+    /*IFRAME*/
+    iframe {
+        width: 100%; height: 250px; border: 1px solid #999; border-radius: 6px;
+    }
+    /*FOOTER*/
+    footer {
+        clear: both; background-color: #355485; color: white; 
+        text-align: center; padding: 14px 0; margin-top: 20px;
+    }
+    footer a {
+        color: #cbdde9; text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+    /*gatau ini dari kakaknya "RESPONSIVE SEDIKIT" katanya*/
+    @media (max-widht: 768px) {
+        section,
+        aside {
+            float: none; width: 100%;
+        } 
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Ini Judul</h1>
+        <p>Ini Subjudul</p>
+    </header>
+    <nav>
+        <a href="https://www.instagram.com/yoasei">adsfadf</a>
+        <a href="https://www.instagram.com/yoasei">adsfadf</a>
+        <a href="https://www.instagram.com/yoasei">adsfadf</a>
+        <a href="https://www.instagram.com/yoasei">adsfadf</a>
+    </nav>      
+    <section class="container">
+        <h2>Subjudul 2</h2>
+        <img src="link gif" alt="gif">
+        <p>
+            <b>Jakarta, asfdadf. </b>Gw gatau mau nulis apa di sini. cuma nanti ini bakal diisi sama narasi panjang yg gw gatau bisa diisi custom atau ngikutin sama persis kek di contoh.
+            <br>
+            <br>
+            <!--DOTS LISTING-->
+            <b>Listing sesuatu:</b>
+            <ul>
+                <li>ini satu</li>
+                <li>ini dua</li>
+                <li>dst</li>
+            </ul>
+            <!--NUMERIC LISTING-->
+            <b>Listing nomor</b>
+            <ol>
+                <li>afdafds</li>
+                <li>afdafds</li>
+                <li>afdafds</li>
+            </ol>
+            <br>
+            <!--TABEL-->
+            <table>
+                <>
+            </table>
+            <!--MOTTO HIDUP-->
+            dan inilah motto hidupnya
+            <br>
+            <blockquote style="border-left: #355485 solid 5px; background-color: #4884b539;">
+                <div style="padding: 5px; margin: 2px;">
+                    Manusia takkan terus hidup jika hanya untuk menemukan.
+                Manusia akan terus hidup karena mereka terus mencari.
+                </div>
+            </blockquote>
+            <!--IFRAME-->
+            <h2>Nah ini tuh IFRAME</h2>
+            <p>Nih contohnya. Liat ke bawah sini:</p>   
+        </p>
+    </section> 
+    <!--SIDEBAR-->
+    <aside>
+        <h2>Fakta Unik Tentang Saya</h2>
+        <p>
+            <ul>
+                <li>asfdsadf</li>
+                <li>asdfsaf</li>
+                <li>asdfasdf</li>
+            </ul>
+            <b>Jadwal kegiatan fsadf asdf</b>
+            <table>
+                <th>Waktu</th>
+                <th>Kegiatan</th>
+            </table>
+        </p>
+    </aside>
+    <footer>
+        <p><b>Hubungi saya: </b><a href="mailto: alielryn@gmail.com">alielryn@gmail.com</a></p>
+        <p>&copy;2025 Ahmad Fathi Ahlul Rayan - bayar sini</p>
+    </footer>
+</body>
+</html>

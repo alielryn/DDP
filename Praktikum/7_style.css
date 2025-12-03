@@ -1,0 +1,40 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: justify;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(88, 201, 161, 0.311);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    margin-top: 20px;
+}
+
+.box {
+    width: 200px;
+    padding: 10px;
+    border: 4px solid #2eb59a;
+    margin: 10px 0;
+    background-color: #bad7ac;
+}
+
+.float-img {
+    float: right;
+    width: 240px;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
